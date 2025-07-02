@@ -394,9 +394,9 @@ button {
   position: relative;
 }
 .star-img {
-  top: -3vw;
-  left: -3vw;
-  width: 3vw;
+  top: -2vw;
+  left: -2vw;
+  width: 2vw;
   position: absolute;
   animation: star_effect 1s linear infinite;
 }
