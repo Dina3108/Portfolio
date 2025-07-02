@@ -1,0 +1,579 @@
+html,
+body {
+  background-color: black;
+  color: white;
+  font-family: Kulim Park, arial;
+  padding-top: 25px;
+  cursor: url(Files/d2.png), auto;
+  scroll-behavior: smooth;
+}
+button {
+  cursor: url(Files/d2.png), auto;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  top: 0vh;
+  left: 1vw;
+  right: 1vw;
+  padding-top: 2vh;
+  background-color: black;
+}
+.left-h {
+  font-size: 30px;
+  flex: 1;
+}
+.right-h {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.header-but {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-family: Kulim Park, arial;
+  padding: 10px;
+  border-radius: 20px;
+  transition: background-color 0.75s, color 0.75s;
+}
+.header-but:hover {
+  background-color: white;
+  color: black;
+  animation: letter_space_effect 2s linear;
+}
+.nav-but {
+  opacity: 0;
+}
+@keyframes letter_space_effect {
+  from {
+    letter-spacing: 1px;
+  }
+  to {
+    letter-spacing: 3px;
+  }
+}
+.about-div {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 30px 0px 30px 0px;
+}
+.left-1 {
+  height: 50vh;
+}
+.name-p {
+  font-size: 2.7vw;
+  margin-top: 6vw;
+  margin: 0vw;
+  line-height: 4.3vw;
+  letter-spacing: 1.5px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  animation: tw_eff 5s steps(22) forwards, blink 1s steps(22) infinite;
+  padding-top: 3vw;
+}
+@keyframes tw_eff {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-right-color: transparent;
+  }
+}
+.about-p {
+  font-size: 2.3vw;
+  margin-top: 6vw;
+  margin: 4vw;
+  margin-top: 1vw;
+  line-height: 4.3vw;
+  letter-spacing: 1.5px;
+}
+@keyframes text_effect {
+  0% {
+    color: black;
+  }
+  50% {
+    color: white;
+  }
+}
+.right-1 {
+  height: 50vh;
+}
+.profile-img {
+  height: 75vh;
+  perspective: 1000;
+}
+.profile-img:hover {
+  animation: image_rotate 5s linear both;
+}
+@keyframes image_rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.education-p {
+  font-size: 4vw;
+  margin-top: 15vh;
+  animation: text_effect 4s linear infinite;
+}
+.education-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 65vh;
+}
+.e1-div {
+  border: 2px solid white;
+  margin: 2.8vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  background-color: white;
+  color: black;
+  border-radius: 3vw;
+  font-size: 2.5vw;
+  padding-top: vw;
+
+  letter-spacing: 2px;
+  line-height: 4vw;
+}
+.e1-div:hover {
+  animation: up 3s linear;
+}
+@keyframes up {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+.skills-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.skill-kit-p {
+  font-size: 4vw;
+  text-align: center;
+  letter-spacing: 2px;
+  animation: text_effect 4s linear infinite;
+}
+.sk-p {
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+.sk-fill-div {
+  text-align: end;
+  height: 3vh;
+  border-radius: 2vw;
+  width: 300px;
+  margin: 1vw 4vw 1vw 4vw;
+  border: solid 2px white;
+  color: black;
+}
+.color-div {
+  height: 3vh;
+  border-radius: 2vw;
+  background-color: aqua;
+  transition: animation 2s;
+  animation-name: fill;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  color: white;
+}
+.sk-div:nth-child(1) .color-div {
+  background-color: #e44d26;
+  width: 90%;
+}
+.sk-div:nth-child(2) .color-div {
+  background-color: #264de4;
+  width: 85%;
+}
+
+.sk-div:nth-child(3) .color-div {
+  background-color: #f7df1e;
+  width: 75%;
+  color: black;
+}
+.sk-div:nth-child(4) .color-div {
+  background-color: #04607e;
+  width: 90%;
+}
+.sk-div:nth-child(5) .color-div {
+  background-color: #e70488;
+  width: 92%;
+}
+.sk-div:nth-child(6) .color-div {
+  background-color: #0b92e1;
+  width: 75%;
+}
+
+.sk-div:nth-child(7) .color-div {
+  background-color: #4c72b0;
+  width: 95%;
+}
+.sk-div:nth-child(8) .color-div {
+  background-color: #41cd52;
+  width: 60%;
+}
+.sk-div:nth-child(9) .color-div {
+  background-color: #5555ff;
+  width: 85%;
+}
+.sk-div:nth-child(10) .color-div {
+  background-color: #ffde57;
+  width: 90%;
+}
+
+.sk-div:nth-child(11) .color-div {
+  background-color: #f05032;
+  width: 65%;
+}
+.sk-div:nth-child(12) .color-div {
+  background-color: #007acc;
+  width: 70%;
+}
+@keyframes fill {
+  from {
+    width: 0px;
+  }
+  to {
+    width: width;
+  }
+}
+.Achievements-div {
+  margin: 2vw;
+}
+.ach-title {
+  font-size: 4vw;
+  animation: text_effect 4s linear infinite;
+}
+.ach-subtitle {
+  font-size: 3vw;
+  margin: 1vw;
+}
+.tally-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+.count-p {
+  font-size: 3vw;
+  margin: 0;
+  margin-left: 3vw;
+  background-color: white;
+  color: black;
+  padding: 2vw;
+  border-radius: 3vw;
+  font-weight: bolder;
+}
+.count-p:hover {
+  color: transparent;
+  padding-right: 3vw;
+  border-radius: 4vw;
+}
+.tally-div:nth-child(2) .count-p::after {
+  color: transparent;
+  content: "";
+}
+.tally-div:nth-child(2) .count-p:hover::after {
+  animation: count1 3s linear;
+}
+.tally-div:nth-child(3) .count-p::after {
+  color: transparent;
+  content: "";
+}
+.tally-div:nth-child(3) .count-p:hover::after {
+  animation: count2 3s linear;
+}
+.tally-div:nth-child(4) .count-p::after {
+  color: transparent;
+  content: "";
+}
+.tally-div:nth-child(4) .count-p:hover::after {
+  animation: count3 1s linear;
+}
+.tally-div:nth-child(5) .count-p::after {
+  color: transparent;
+  content: "";
+}
+.tally-div:nth-child(5) .count-p:hover::after {
+  animation: count4 1.5s linear;
+}
+@keyframes count1 {
+  0% {
+    content: "0";
+    color: blue;
+  }
+  10% {
+    content: "1";
+    color: red;
+  }
+  30% {
+    content: "2";
+    color: #f7df1e;
+  }
+  50% {
+    content: "3";
+    color: turquoise;
+  }
+  70% {
+    content: "4";
+    color: chocolate;
+  }
+  90% {
+    content: "5";
+    color: green;
+  }
+  100% {
+    content: "6";
+    color: rgb(248, 3, 239);
+  }
+}
+@keyframes count2 {
+  0% {
+    content: "0";
+    color: blue;
+  }
+  20% {
+    content: "1";
+    color: red;
+  }
+  40% {
+    content: "2";
+    color: #f7df1e;
+  }
+  60% {
+    content: "3";
+    color: turquoise;
+  }
+  80% {
+    content: "4";
+    color: chocolate;
+  }
+  100% {
+    content: "5";
+    color: green;
+  }
+}
+@keyframes count3 {
+  0% {
+    content: "0";
+    color: blue;
+  }
+  100% {
+    content: "1";
+    color: red;
+  }
+}
+@keyframes count4 {
+  0% {
+    content: "0";
+    color: blue;
+  }
+  50% {
+    content: "1";
+    color: red;
+  }
+  100% {
+    content: "2";
+    color: #f7df1e;
+  }
+}
+.star-div {
+  position: relative;
+}
+.star-img {
+  top: -3vw;
+  left: -3vw;
+  width: 3vw;
+  position: absolute;
+  animation: star_effect 1s linear infinite;
+}
+@keyframes star_effect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.star-img:nth-child(1) {
+  animation: star_effect 0.3s linear infinite;
+}
+.star-img:nth-child(2) {
+  top: -3vw;
+  animation-duration: 2s;
+}
+.cert-link {
+  font-size: 3vw;
+  color: aliceblue;
+}
+.contact-title {
+  font-size: 3vw;
+  margin-top: 5vw;
+  animation: text_effect 4s linear infinite;
+}
+.contact-div {
+  margin: 2vw;
+}
+.logo-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo-img {
+  width: 9vw;
+}
+.logo-link {
+  font-size: 3vw;
+  color: yellow;
+}
+@media only screen and (min-width: 220px) and (max-width: 740px) and (orientation: portrait) {
+  html,
+  body {
+    padding-top: 55px;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .left-h {
+    flex: 1;
+    font-size: 30px;
+    text-align: center;
+    margin: 2vw;
+  }
+  .right-h {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+  }
+  .header-but {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-family: Kulim Park, arial;
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.75s, color 0.75s;
+    opacity: 1;
+    margin-left: 2vw;
+  }
+  .header-but:hover {
+    background-color: white;
+    color: black;
+  }
+  .header-but:active {
+    opacity: 1;
+  }
+  .about-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px 0px 30px 0px;
+  }
+  .left-1 {
+    height: 30vh;
+  }
+  .name-p {
+    font-size: 4vw;
+    margin-top: 6vw;
+    margin: 0vw;
+    line-height: 4.3vw;
+    letter-spacing: 1.5px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    animation: tw_eff 5s steps(22) forwards, blink 1s steps(22) infinite;
+    padding-top: 3vw;
+  }
+  .about-p {
+    font-size: 3.5vw;
+    margin-top: 6vw;
+    margin: 4vw;
+  }
+  .right-1 {
+    height: 75vh;
+  }
+  .profile-img {
+    height: 75vh;
+  }
+  .education-p {
+    margin-top: 0vw;
+  }
+  .education-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 50vh;
+    text-align: center;
+  }
+  .e1-div {
+    padding-top: 1vw;
+    font-size: 1.3em;
+    line-height: 5.5vw;
+  }
+  .skills-div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .ach-title {
+    font-weight: bolder;
+  }
+  .ach-subtitle {
+    font-size: 6vw;
+  }
+  .count-p {
+    font-size: 6vw;
+    margin: 0;
+    margin-left: 3vw;
+    background-color: white;
+    color: black;
+    padding: 5vw;
+    border-radius: 6vw;
+    font-weight: bolder;
+  }
+  .count-p:hover {
+    color: transparent;
+    padding-right: 7vw;
+    border-radius: 9vw;
+  }
+  .star-img {
+    top: -6vw;
+    left: -6vw;
+    width: 7vw;
+    position: absolute;
+    animation: star_effect 1s linear infinite;
+  }
+  .star-img:nth-child(2) {
+    top: -5vw;
+  }
+  .cert-link {
+    font-size: 5vw;
+  }
+  .contact-title {
+    font-size: 6vw;
+    margin-top: 7vw;
+  }
+  .logo-img {
+    width: 15vw;
+  }
+  .logo-link {
+    font-size: 5vw;
+    color: yellow;
+  }
+}
