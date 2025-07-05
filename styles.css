@@ -331,12 +331,16 @@ button {
     content: "4";
     color: chocolate;
   }
-  90% {
+  80% {
     content: "5";
+    color: yellow;
+  }
+  90% {
+    content: "6";
     color: green;
   }
   100% {
-    content: "6";
+    content: "7";
     color: rgb(248, 3, 239);
   }
 }
